@@ -4,5 +4,5 @@ weight = float(input("Введите ваш вес: "))
 print(weight * 30)
 if weight > 100:
     print(name + ", Ты просто бомба! Помни, хорошего человека должно быть много!")
-elif weight <= 100:
+else:
     print(name + ", Ты просто бомба! Кушай побольше!")
