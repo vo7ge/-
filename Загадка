@@ -1,0 +1,31 @@
+hello_spisoks = ["Привет", "Салам", "Приветик", "Хэллоу", "Прив"]
+mats = ["Хуй", "Член", "Пенис"]
+bye_spisoks = ["Пока", "Поки", "До свидания", "Бай"]
+hello = input("Приветик, мой Друг!: ")
+for hello_spisok in hello_spisoks:
+    if hello_spisok == hello:
+        print("Спасибо, что поздоровался!")
+        break
+else:
+    hi = input("Поздоровайся со мной: ")
+        
+print("Поиграем в загадки?")
+riddle = input("""Ты помни его немножко, станет твёрдым как картошка.
+Что это?: """)
+for mat in mats:
+    if mat == riddle:
+        print("Ах, ты маленький извращенец, о чём ты думаешь? Это был снежок!!!")
+        break
+    elif riddle == ("Снежок"):
+        print("Умничка, ты прав!")
+        break
+else:
+    print("Я тебя не понимаю")
+        
+bye = input("С тобой классной играть, поки: ")
+for bye_spisok in bye_spisoks:
+    if bye_spisok == bye:
+        print("До встречи!")
+        break
+else:
+    hi = input("Скажи мне пока: ")
