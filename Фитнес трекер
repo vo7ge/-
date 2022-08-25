@@ -1,0 +1,17 @@
+print(
+    """Это трекер отслеживающий ваш вес!
+ Напиши 'Заполнить', чтоб заполнить и сохранить новые данные.
+ Напиши 'Архив', чтоб посмотреть прошлые результаты."""
+ )
+reguest = str(input("Ввод: "))
+if reguest == "Заполнить":
+    data = input("Введите дату: ")
+    weight = input("Введите вес: ")
+    with open("фитнес.txt", "a") as fitnes:
+        fitnes.write(data)
+        fitnes.write(" - " + weight + "\n")
+elif reguest == "Архив":
+    with open("фитнес.txt", "r") as fitnes:
+        print(fitnes.read())
+else :
+    print("Моя твоя не понимать")
