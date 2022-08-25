@@ -1,0 +1,10 @@
+x = int(input("Введи число: "))
+
+
+def number(x):
+    return x ** y
+
+
+y = int(input("Введи степень: "))
+result = number(x)
+print("Ответ:", result)
